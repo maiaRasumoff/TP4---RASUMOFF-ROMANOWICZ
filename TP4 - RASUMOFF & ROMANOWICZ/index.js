@@ -52,13 +52,13 @@ const fs = require('fs'); //requiero el modulo interno 'fs'
   }
 
 copiarArchivo('./archivo.txt', './archivo2.txt');
-*/
 
 
 const url = require('url'); //requiero modulo interno 'url'
 
 const parsearUrl = (link) => {
 
+  const parseado= tryParseUrl(link);
     const linkParseado= url.parse(link);
     const objUrl = {
         
@@ -70,7 +70,22 @@ const parsearUrl = (link) => {
     return objUrl;
 }
 
-console.log(parsearUrl("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo"));
+//console.log(parsearUrl("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo"));
 
 //ejercicio 6
+
+try {
+  parsearUrl("a");
+} catch (error) {
+  console.log("Error: "+ error);
+}
+*/
+
 //ejercicio 7
+
+const countryToCurrency = require('country-to-currency');
+
+const obtenerMoneda = (moneda) => {return countryToCurrency[ moneda ];}
+
+let moneda= obtenerMoneda("BR");
+console.log("Moneda de Brasil: " + moneda);

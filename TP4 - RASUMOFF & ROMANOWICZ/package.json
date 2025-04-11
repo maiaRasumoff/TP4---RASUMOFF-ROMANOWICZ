@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/maiaRasumoff/TP4---RASUMOFF-ROMANOWICZ/issues"
   },
-  "homepage": "https://github.com/maiaRasumoff/TP4---RASUMOFF-ROMANOWICZ#readme"
+  "homepage": "https://github.com/maiaRasumoff/TP4---RASUMOFF-ROMANOWICZ#readme",
+  "dependencies": {
+    "country-to-currency": "^2.0.2"
+  }
 }
